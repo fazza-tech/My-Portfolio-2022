@@ -316,6 +316,7 @@ header{
 }
 .project-filter-active{
     background-color: var(--main-color);
+    border-radius: 0.4rem;
     
 }
 .project-container{
@@ -400,4 +401,10 @@ header{
         margin: 0 auto;
         width: 90%;
     }
+}
+
+.flexwarn{
+    display: inline-block;
+    align-items: center;
+    margin-left: 200px;
 }

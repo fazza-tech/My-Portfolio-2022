@@ -256,6 +256,153 @@ header{
     margin-bottom: 1.5rem;
 }
 
+/*Skill*/
+
+
+.skills p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+}
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    background: var(--container-color);
+    border-radius: 0.4rem;
+    transition: 0.5s all cubic-bezier(0.075, 0.82,0.165,1);
+}
+.skills-box:hover{
+    transform: scale(1.05);
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.skills-box .uli{
+    font-size: 1.4rem;
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 5rem;
+    border: 2px  var(--bg-color) ;
+}
+.skills-box h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: var(--main-color);
+}
+.skills-box p{
+    font-size: 0.9rem;
+}
+
+/*skills-bar*/
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 1px solid var(--container-color);
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 7px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+   
+ 
+}
+
+/*Animation--start--here*/
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 30%;
+    }
+}
+
+#rt-bar{
+    animation: rt-fill 2s forwards;
+}
+@keyframes rt-fill {
+    100%{
+        width: 3%;
+    }
+}
+
+#ps-bar{
+    animation: ps-fill 2s forwards;
+}
+@keyframes ps-fill{
+    100%{
+        width: 90%;
+    }
+} 
+#fg-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 82%;
+    }
+} 
+#xd-bar{
+    animation: xd-fill 2s forwards;
+}
+@keyframes xd-fill{
+    100%{
+        width: 82%;
+    }
+} 
+#git-bar{
+    animation: git-fill 2s forwards;
+}
+@keyframes git-fill{
+    100%{
+        width: 82%;
+    }
+} 
+
+
+
+
+
+
+
 /*Services*/
 .services-content{
     display: grid;
@@ -395,16 +542,146 @@ header{
 }
 
 
-/*Responsive-Design*/
-@media(max-width:990px){
-    .container{
+/*Responsive Design*/
+@media (max-width:990px) {
+    .container {
         margin: 0 auto;
         width: 90%;
     }
 }
 
-.flexwarn{
-    display: inline-block;
-    align-items: center;
-    margin-left: 200px;
+@media (max-width:892px) {
+    section {
+        padding: rem 0;
+    }
+
+    .nav {
+        padding: 12px 0;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .portfolio-box {
+        height: 257px;
+    }
+}
+
+@media (max-width:775px) {
+    .nav {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .home {
+        min-height: 500px;
+        padding-top: 6rem;
+    }
+
+    .home-text h3 {
+        font-size: 1rem;
+    }
+
+    .home-text h2 {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.825rem;
+    }
+    .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+
+    .services-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-box {
+        height: 245px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--box-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 30px;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    .open-menu {
+        right: 0;
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav-link {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+@media (max-width:635px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .about-data span {
+        font-size: 0.9rem;
+    }
+    .about-data h2 {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        font-weight: 600;
+        margin: 0.8rem 0;
+    }
+    .about-text p {
+        font-size: 0.825rem;
+        margin-bottom: 1.3rem;
+    }
+    
+}
+@media (max-width:450px) {
+    .home {
+        min-height: 485px;
+        padding-top: 5rem;
+    }
+    .home-img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .home-text h2 {
+        font-size: 2.1rem;
+        line-height: 3.2rem;
+    }
+    .home-text p br {
+        display: contents;
+    }
+}
+@media (max-width:375px) {
+    .home-img {
+        width: 120px;
+        height: 120px;
+    }
+    .about-data h2 {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        margin: 0.6rem 0;
+    }
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
 }

@@ -651,6 +651,12 @@ header{
         font-size: 0.825rem;
         margin-bottom: 1.3rem;
     }
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+    .services-content {
+        grid-template-columns: 1fr;
+    }
     
 }
 @media (max-width:450px) {
@@ -671,6 +677,9 @@ header{
         display: contents;
     }
     .skills-content {
+        grid-template-columns: 1fr;
+    }
+    .services-content {
         grid-template-columns: 1fr;
     }
 }

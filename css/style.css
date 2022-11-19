@@ -318,9 +318,9 @@ header {
 .skills-box {
     display: flex;
     flex-direction: column;
-
+    
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     padding-bottom: 30px;
     background: var(--container-color);
     border-radius: 0.4rem;
